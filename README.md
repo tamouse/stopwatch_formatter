@@ -8,15 +8,15 @@ Add test duration for each test in the Documentation format.
 
 Add this line to your application's Gemfile:
 
-    gem 'stopwatch_formatter'
+        gem 'stopwatch_formatter'
 
 And then execute:
 
-    $ bundle
+        $ bundle
 
 Or install it yourself as:
 
-    $ gem install stopwatch_formatter
+        $ gem install stopwatch_formatter
 
 ## Usage
 
@@ -35,32 +35,6 @@ file:
 
 but if you also specify a formatter via the command line or .rspec,
 you'll get both sets of output (fun!).
-
-# General information on RSpec custom formatters
-
-The standard documentation formatter for RSpec does not show how long
-each test executes. This information is available in the HTML
-formatter, though, so I thought it could be available in others. Turns
-out this is true.
-
-Inside the formatter, the `example` variable has a method called
-`execution_result` that is a Hash. One of the hash keys is
-`:run_time`, which is the milliseconds the test took to run, just what
-we wanted.
-
-
-## Creating the custom formatter
-
-The simplest thing in our case is to subclass the Document formatter,
-and replace the reporting functions. `stopwatch_formatter.rb` does
-this.
-
-## Using the custom formatter
-
-You just need to require the file containing your custom formatter,
-and call it by the class name, `StopwatchFormatter` in this case.
-
-        rspec -r /path/to/stopwatch_formatter.rb --format StopwatchFormatter ...
 
 ## Contributing
 
