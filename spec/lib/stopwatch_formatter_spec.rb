@@ -1,11 +1,10 @@
 require 'spec_helper'
 
 describe StopwatchFormatter do
-  it 'should have a version number' do
-    StopwatchFormatter::VERSION.should_not be_nil
+  it 'this will pass' do
+    true.should be_true
   end
-
-  it 'should do something useful' do
+  it 'this will fail' do
     false.should be_true
   end
 end

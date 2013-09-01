@@ -22,8 +22,19 @@ Or install it yourself as:
 
 Add the following to your `spec/spec_helper.rb` file:
 
+        require 'stopwatch_formatter'
 
+Add or change the following in your `.rspec` file:
 
+        --format StopwatchFormatter
+
+Alternatively, you can add the following to the `spec/spec_helper.rb`
+file:
+
+        RSpec.configure {|c| c.add_formatter StopwatchFormatter }
+
+but if you also specify a formatter via the command line or .rspec,
+you'll get both sets of output (fun!).
 
 # General information on RSpec custom formatters
 
