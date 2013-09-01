@@ -1,11 +1,10 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'rspec_stopwatch_formatter/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "rspec_stopwatch_formatter"
-  spec.version       = RspecStopwatchFormatter::VERSION
+  spec.name          = "stopwatch_formatter"
+  spec.version       = "1.0.0"
   spec.authors       = ["Tamara Temple"]
   spec.email         = ["tamouse@gmail.com"]
   spec.description   = %q{The standard RSpec documentation formatter does not display the amount of time each test took. This formatter provides that information}

@@ -1,4 +1,4 @@
-# RspecStopwatchFormatter
+# StopwatchFormatter
 
 Add test duration for each test in the Documentation format.
 
@@ -8,7 +8,7 @@ Add test duration for each test in the Documentation format.
 
 Add this line to your application's Gemfile:
 
-    gem 'rspec_stopwatch_formatter'
+    gem 'stopwatch_formatter'
 
 And then execute:
 
@@ -16,14 +16,14 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install rspec_stopwatch_formatter
+    $ gem install stopwatch_formatter
 
 ## Usage
 
 Add the following to your `spec/spec_helper.rb` file:
 
-        require 'rspec_stopwatch_formatter'
-        RSpec.configuration.add_formatter StopwatchFormatter
+
+
 
 # General information on RSpec custom formatters
 

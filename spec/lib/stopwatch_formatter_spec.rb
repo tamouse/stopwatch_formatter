@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe RspecStopwatchFormatter do
+describe StopwatchFormatter do
   it 'should have a version number' do
-    RspecStopwatchFormatter::VERSION.should_not be_nil
+    StopwatchFormatter::VERSION.should_not be_nil
   end
 
   it 'should do something useful' do
